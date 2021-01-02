@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\UserConroller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/test', function () {
-    return view('test');
-});
+Route::get('/', [DashboardController::class,'index']);
+Route::get('/show', [DashboardController::class,'show']);
+
+Route::resource('users', UserConroller::class);
+
