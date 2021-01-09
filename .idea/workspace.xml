@@ -21,9 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bc1d27fe-0405-4feb-bc1e-470e9dbcc365" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/test.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,6 +189,8 @@
       <workItem from="1608725995300" duration="3137000" />
       <workItem from="1609222162256" duration="48000" />
       <workItem from="1609589475318" duration="2905000" />
+      <workItem from="1609655114314" duration="594000" />
+      <workItem from="1609740240801" duration="684000" />
     </task>
     <servers />
   </component>
@@ -208,6 +207,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state width="498" height="446" key="SwitcherDM" timestamp="1609592317555">
