@@ -16,8 +16,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', [DashboardController::class,'index']);
+Route::get('/', [DashboardController::class,'index'])->name('home');
 Route::get('/show', [DashboardController::class,'show']);
 
 Route::resource('users', UserConroller::class);
+
+Route::get('users/delete/{id}',[UserConroller::class,'delete'])->name('users.delete');
 

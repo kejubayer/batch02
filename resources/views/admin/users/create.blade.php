@@ -1,38 +1,31 @@
 @extends('layouts.admin')
 @section('main')
     <div style="margin-left: 250px; margin-top: 40px; padding-right: 400px" >
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">@</span>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-        </div>
-
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-            <span class="input-group-text" id="basic-addon2">@example.com</span>
-        </div>
-
-        <label for="basic-url" class="form-label">Your vanity URL</label>
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-        </div>
-
-        <div class="input-group mb-3">
-            <span class="input-group-text">$</span>
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-            <span class="input-group-text">.00</span>
-        </div>
-
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-            <span class="input-group-text">@</span>
-            <input type="text" class="form-control" placeholder="Server" aria-label="Server">
-        </div>
-
-        <div class="input-group">
-            <span class="input-group-text">With textarea</span>
-            <textarea class="form-control" aria-label="With textarea"></textarea>
-        </div>
+        <h3 class="text-center">Create User</h3>
+        <form action="{{route('users.index')}}" method="post">
+            @csrf
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" name="address" class="form-control" id="address" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="text" name="phone" class="form-control" id="phone" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
 
 @stop
